@@ -3,8 +3,8 @@ import React, {useState} from 'react'
 import { useHistory } from 'react-router-dom'
 
 const Login = (props) => {
-  // const host = "https://nataraj-academy-form.onrender.com";
-  const host =  "http://localhost:8800";
+  const host = "https://nataraj-academy-form.onrender.com";
+  // const host =  "http://localhost:8800";
     const [credentials, setCredentials] = useState({email:"", password:""})
     let history = useHistory()
     const handleSubmit = async (e)=>{

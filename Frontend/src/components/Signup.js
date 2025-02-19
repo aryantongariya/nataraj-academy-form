@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Signup = (props) => {
-  // const host = "https://nataraj-academy-form.onrender.com";
-  const host =  "http://localhost:8800";
+  const host = "https://nataraj-academy-form.onrender.com";
+  // const host =  "http://localhost:8800";
   const [credentials, setCredentials] = useState({
     email: "",
     password: "",

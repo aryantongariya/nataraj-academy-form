@@ -16,7 +16,7 @@ const PORT = process.env.PORT
 const _dirname = path.resolve();
 
 const corsOptions ={
-  origin:"http://localhost:3000",
+  origin:"https://nataraj-academy-form.onrender.com",
   credentials:true
 }
 
