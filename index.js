@@ -15,8 +15,13 @@ const PORT = process.env.PORT
 
 const _dirname = path.resolve();
 
+const corsOptions ={
+  origin:"http://localhost:3000",
+  credentials:true
+}
+
 // dotenv.config()
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(express.json())
 
 // Available Routes

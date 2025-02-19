@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Signup = (props) => {
+  // const host = "https://nataraj-academy-form.onrender.com";
+  const host =  "http://localhost:8800";
   const [credentials, setCredentials] = useState({
     email: "",
     password: "",
@@ -12,7 +14,7 @@ const Signup = (props) => {
   const handleSubmit = async (e) => { 
     e.preventDefault();
     const { name, email, password } = credentials;
-    const response = await fetch("https://nataraj-academy-form.onrender.com/api/auth/createuser", {
+    const response = await fetch(`${host}/api/auth/createuser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
