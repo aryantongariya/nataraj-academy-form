@@ -81,7 +81,7 @@ const Noteitem = (props) => {
           <td><MdDelete
            className="red mx-2"
             onClick={() => {
-              deleteNote(note._id);
+              // deleteNote(note._id);
               // props.showAlert("Delete successfully", "success");
               const swalWithBootstrapButtons = Swal.mixin({
                 customClass: {
