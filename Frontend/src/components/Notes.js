@@ -146,7 +146,7 @@ const Notes = (props) => {
                 <div className="form-group">
                   <label htmlFor="dob">Date of Birth</label>
                   <input
-                    type="date"
+                    type="text"
                     className="form-control"
                     id="edob"
                     name="edob"
