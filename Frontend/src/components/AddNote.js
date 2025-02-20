@@ -223,10 +223,10 @@ const AddNote = (props) => {
       const updatedInterests = checked
       // const updatedActivity = activitiCheked
         ? [...note.agree,    value]
-        : note.agree.filter((item) => item !== value)
+        : note.agree.filter((item) => item !== value - 1)
 
         ? [...note.activity,    value]
-            : note.activity.filter((item) => item !== value)
+            : note.activity.filter((item) => item !== value - 1)
         setNote({ ...note,agree: updatedInterests, activity: updatedInterests});
       }
       else {
@@ -237,7 +237,7 @@ const AddNote = (props) => {
 
 
   return (
-    <div>
+    <div className="div-container">
       <div className="container">
         <h1 className="h1-text">Registration Form</h1>
         <form >

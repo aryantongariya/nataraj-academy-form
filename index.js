@@ -9,14 +9,18 @@ const path = require('path')
 const express = require('express')
 var cors = require('cors')
 
+  const host = "https://nataraj-academy-form.onrender.com";
+  // const host =  "http://localhost:3000";
+
 connectToMongo();
 const app = express()
 const PORT = process.env.PORT
 
+
 const _dirname = path.resolve();
 
 const corsOptions ={
-  origin:"https://nataraj-academy-form.onrender.com",
+  origin:`${host}`,
   credentials:true
 }
 

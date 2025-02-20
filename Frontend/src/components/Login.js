@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 // import Swal from 'sweetalert2'
+import "./style.css"
 import { useHistory } from 'react-router-dom'
 
 const Login = (props) => {
@@ -41,12 +42,12 @@ const onChange = (e)=>{
     return (
         <div className='mt-2'>
           
-          <h2 className='my-3'>Login to continue to iNotebook </h2>
+          <h2 className='my-3'>Login Here </h2>
            <form onSubmit={handleSubmit}>
   <div className="form-group">
     <label htmlFor="email">Email address</label>
     <input type="email" className="form-control" value={credentials.email} onChange={onChange} name='email' id="email" aria-describedby="emailHelp" placeholder="Enter email" />
-    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+    <small id="emailHelp" className="form-text ">We'll never share your email with anyone else.</small>
   </div>
   <div className="form-group">
     <label htmlFor="password">Password</label>

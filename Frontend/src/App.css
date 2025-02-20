@@ -16,13 +16,16 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .error{
   color: red;
 }
 .h1-text{
   color: aliceblue;
 }
-
+ .my-3{
+  color: white;
+ }
 
 .App-header {
   background-color: #282c34;
@@ -38,7 +41,12 @@
 .App-link {
   color: #61dafb;
 }
-
+.form-group label{
+  color: white;
+}
+.form-group .form-text {
+  color: white;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
