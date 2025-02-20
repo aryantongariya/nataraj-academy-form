@@ -79,7 +79,7 @@ const AddNote = (props) => {
           });
 
           localStorage.removeItem('token')
-          history.push('/login')
+          history.push('/')
         }
       })()
       console.log('Form Data:', note);
@@ -274,7 +274,7 @@ const AddNote = (props) => {
             <div className="user-input-box">
               <label >Date Of Birth</label>
               <input
-                type="date"
+                type="text"
                 // className="form-control"
                 id="dob"
                 name="dob"

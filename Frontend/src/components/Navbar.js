@@ -7,7 +7,7 @@ const Navbar = () => {
 const handleLogout =()=>{
 
   localStorage.removeItem('token')
-  history.push('/login')
+  history.push('/')
 }
 
   let location = useLocation();
@@ -45,7 +45,7 @@ const handleLogout =()=>{
               <Link className="nav-link" to="/formList">
               Form List  <span className="sr-only">(current)</span>
               </Link>
-            <Link className="nav-link " to="/">
+            <Link className="nav-link " to="/home">
               Registration<span className="sr-only">(current)</span>
               </Link>
             </li> }
@@ -53,8 +53,8 @@ const handleLogout =()=>{
           </ul>
           
          {!localStorage.getItem('token')? <form className="d-flex">
-           <Link className="btn btn-primary mx-1" to="/login" role="button">login</Link>
-           <Link className="btn btn-primary mx-1" to="/signup"  role="button">Signup</Link>
+           <Link className="btn btn-primary mx-1" to="/" role="button">login</Link>
+           {/* <Link className="btn btn-primary mx-1" to="/signup"  role="button">Signup</Link> */}
           </form>:  
           <button onClick={handleLogout} className="btn btn-primary">Logout</button>
           }

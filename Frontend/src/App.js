@@ -48,13 +48,13 @@ function App() {
           <Route exact path="/formList">
             <Home showAlert={showAlert} />
           </Route>
-          <Route exact path="/">
+          <Route exact path="/home">
             <FormList showAlert={showAlert} />
           </Route>
-          <Route exact path="/login">
+          <Route exact path="/">
             <Login showAlert={showAlert}  />
           </Route>
-          <Route exact path="/signup">
+          <Route exact path="/signup-abcd-5678-nataraj-aryan">
             <Signup showAlert={showAlert}  />
           </Route>
         </Switch>
