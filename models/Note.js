@@ -47,10 +47,10 @@ const NotesSchema = new Schema({
         type:String,
         required:true
     },
-    email:{
-        type:String,
-        required:true
-    },
+    // email:{
+    //     type:String,
+    //     required:true
+    // },
     activity:{
         type:[String],
         required:true

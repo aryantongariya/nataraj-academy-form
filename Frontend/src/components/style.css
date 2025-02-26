@@ -208,3 +208,65 @@ body{
         width: 0;
     }
 }
+/* ----------------------------------------------------------------- */
+
+.invoice-wrapper{
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.invoice{
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--white-color);
+    /* background: url(./img/Natraja.png);
+    background-size: cover repeat no repeat; */
+    opacity:1;
+    padding: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-height: 920px;
+}
+/* .invoice-body{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.invoice-body table{
+    border-collapse: collapse;
+    border-radius: 4px;
+    width: 100%;
+}
+.invoice-body table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+} */
+.overflow-view{
+    overflow-x: scroll;
+}
+.invoice-body{
+    min-width: 600px;
+}
+@media screen and (max-width: 992px){
+    .invoice{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .invoice-head-top, .invoice-head-middle, .invoice-head-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .invoice-head-bottom-right{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .invoice *{
+        text-align: left;
+    }
+    .invoice{
+        padding: 28px;
+    }
+}
+

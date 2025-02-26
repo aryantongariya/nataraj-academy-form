@@ -53,7 +53,7 @@ router.post(
         motherName,
         motherOcc,
         motherNum,
-        email,
+        // email,
         activity,
         health,
         feesMode,
@@ -75,7 +75,7 @@ router.post(
         motherName,
         motherOcc,
         motherNum,
-        email,
+        // email,
         activity,
         health,
         feesMode,
@@ -89,56 +89,6 @@ router.post(
       console.error(error.message);
       res.status(500).send("internal server Error");
     }
-
-  //   async (req, res) => {
-  //     const errors = validationResult(req);
-  //     if (!errors.isEmpty()) {
-  //         return res.status(400).json({ errors: errors.array() });
-  //     }
-
-  //     const { firstName,
-  //           lastName,
-  //           dob,
-  //           gender,
-  //           fatherName,
-  //           fatherOcc,
-  //           fatherNum,
-  //           motherName,
-  //           motherOcc,
-  //           motherNum,
-  //           email,
-  //           activity,
-  //           health,
-  //           feesMode,
-  //           dateOfJuining, } = req.body;
-  //     try {
-  //         const note = new Note({ firstName,
-  //               lastName,
-  //               dob,
-  //               gender,
-  //               fatherName,
-  //               fatherOcc,
-  //               fatherNum,
-  //               motherName,
-  //               motherOcc,
-  //               motherNum,
-  //               email,
-  //               activity,
-  //               health,
-  //               feesMode,
-  //               dateOfJuining, });
-  //               const saveNote = await note.save();
-  //                 res.json(saveNote);
-  //         // await note.save();
-  //         res.status(201).json({ message: 'Registration successful' });
-  //     } catch (error) {
-  //         res.status(400).json({ error: 'Registration failed' });
-  //         console.error(error.message);
-  //         // res.status(500).send("internal server Error")
-  //     }
-
-  //     // res.status(500).send("internal server Error")
-  // }
   }
 );
 
@@ -156,7 +106,7 @@ router.put("/updatenote/:id", fetchuser, async (req, res) => {
         motherName,
         motherOcc,
         motherNum,
-        email,
+        // email,
         activity,
         health,
         feesMode,
@@ -196,9 +146,9 @@ router.put("/updatenote/:id", fetchuser, async (req, res) => {
     if (motherNum) {
       newNote.motherNum = motherNum;
     }
-    if (email) {
-      newNote.email = email;
-    }
+    // if (email) {
+    //   newNote.email = email;
+    // }
     if (activity) {
       newNote.activity = activity;
     }
@@ -252,7 +202,7 @@ router.delete("/deletenote/:id", fetchuser, async (req, res) => {
         motherName,
         motherOcc,
         motherNum,
-        email,
+        // email,
         activity,
         health,
         feesMode,

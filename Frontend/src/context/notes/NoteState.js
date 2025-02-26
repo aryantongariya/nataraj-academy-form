@@ -34,7 +34,7 @@ const NoteState = (props) => {
     motherName,
     motherOcc,
     motherNum,
-    email,
+    // email,
     activity,
     health,
     feesMode,
@@ -60,7 +60,7 @@ const NoteState = (props) => {
         motherName,
         motherOcc,
         motherNum,
-        email,
+        // email,
         activity,
         health,
         feesMode,
@@ -106,7 +106,7 @@ const NoteState = (props) => {
     motherName,
     motherOcc,
     motherNum,
-    email,
+    // email,
     activity,
     health,
     feesMode,
@@ -131,7 +131,7 @@ const NoteState = (props) => {
         motherName,
         motherOcc,
         motherNum,
-        email,
+        // email,
         activity,
         health,
         feesMode,
@@ -157,7 +157,7 @@ const NoteState = (props) => {
         newNotes[index].motherName = motherName;
         newNotes[index].motherOcc = motherOcc;
         newNotes[index].motherNum = motherNum;
-        newNotes[index].email = email;
+        // newNotes[index].email = email;
         newNotes[index].activity = activity;
         newNotes[index].health = health;
         newNotes[index].feesMode = feesMode;

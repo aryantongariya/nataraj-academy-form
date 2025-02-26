@@ -30,7 +30,7 @@ const Notes = (props) => {
     emotherName: "",
     emotherOcc: "",
     emotherNum: "",
-    eemail: "",
+    // eemail: "",
     eactivity: "",
     ehealth: "",
     efeesMode: "",
@@ -51,7 +51,7 @@ const Notes = (props) => {
       emotherName: currentNote.motherName,
       emotherOcc: currentNote.motherOcc,
       emotherNum: currentNote.motherNum,
-      eemail: currentNote.email,
+      // eemail: currentNote.email,
       eactivity: currentNote.activity,
       ehealth: currentNote.health,
       efeesMode: currentNote.feesMode,
@@ -71,7 +71,7 @@ const Notes = (props) => {
       note.emotherName,
       note.emotherOcc,
       note.emotherNum,
-      note.eemail,
+      // note.eemail,
       note.eactivity,
       note.ehealth,
       note.efeesMode,
@@ -236,7 +236,7 @@ const Notes = (props) => {
                     onChange={onChange}
                   />
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                   <label htmlFor="fatherName">Email</label>
                   <input
                     type="email"
@@ -246,7 +246,7 @@ const Notes = (props) => {
                     value={note.eemail}
                     onChange={onChange}
                   />
-                </div>
+                </div> */}
                 <div className="form-group">
                 <label>Activities</label>
               <select

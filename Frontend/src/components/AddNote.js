@@ -24,7 +24,7 @@ const AddNote = (props) => {
     motherName: "",
     motherOcc: "",
     motherNum: "",
-    email: "",
+    // email: "",
     activity: "",
     health: "",
     feesMode: "",
@@ -45,7 +45,7 @@ const AddNote = (props) => {
       note.motherName,
       note.motherOcc,
       note.motherNum,
-      note.email,
+      // note.email,
       note.activity,
       note.health,
       note.feesMode,
@@ -160,11 +160,11 @@ const AddNote = (props) => {
     // email
 
     // Email validation
-    if (!note.email) {
-      newErrors.email = 'Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(note.email)) {
-      newErrors.email = 'Invalid email address';
-    }
+    // if (!note.email) {
+    //   newErrors.email = 'Email is required';
+    // } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(note.email)) {
+    //   newErrors.email = 'Invalid email address';
+    // }
 
 
     //activity
@@ -376,7 +376,7 @@ const AddNote = (props) => {
                 value={note.motherNum}
               />{errors.motherNum && <span className="validationError">{errors.motherNum}</span>}
             </div>
-            <div className="user-input-box">
+            {/* <div className="user-input-box">
               <label >Email ID</label>
               <input
                 type="email"
@@ -388,7 +388,7 @@ const AddNote = (props) => {
                 value={note.email}
               />{errors.email && <span className="validationError">{errors.email}</span>}
 
-            </div>
+            </div> */}
 
             {/* <div className="user-input-box">
               <label>Activities</label>
