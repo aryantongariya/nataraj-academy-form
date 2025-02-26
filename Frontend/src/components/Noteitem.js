@@ -17,9 +17,7 @@ const Noteitem = (props) => {
 
 
   return (
-    <div className="invoice-wrapper" id="print-area">
-      <div className="invoice">
-        <div className="invoice-container">
+   
         <div className="overflow-view">
         <div className="invoice-body">
           <Table striped="columns">
@@ -134,9 +132,7 @@ const Noteitem = (props) => {
           </Table>
           </div>
           </div>
-        </div>
-      </div>
-    </div>
+     
 
   );
 

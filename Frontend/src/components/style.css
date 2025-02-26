@@ -210,25 +210,7 @@ body{
 }
 /* ----------------------------------------------------------------- */
 
-.invoice-wrapper{
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.invoice{
-    max-width: 850px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: var(--white-color);
-    /* background: url(./img/Natraja.png);
-    background-size: cover repeat no repeat; */
-    opacity:1;
-    padding: 70px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    min-height: 920px;
-}
+
 /* .invoice-body{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
